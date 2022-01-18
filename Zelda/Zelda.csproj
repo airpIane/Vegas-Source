@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DAA3CE6-8D30-418E-A5A7-4E1A9FC0C4BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Zelda</RootNamespace>
+    <AssemblyName>Zelda</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>8192</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Zelda.ico</ApplicationIcon>
+    <StartupObject>Zelda.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\admin\Downloads\Vegas (2)\Vegas\Vegas Unpacked\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SafeGuard">
+      <HintPath>C:\Users\admin\Downloads\Vegas (2)\Vegas\Vegas Unpacked\SafeGuard.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.0.9.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.0.9\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI">
+      <HintPath>C:\Users\admin\Downloads\Vegas (2)\Vegas\Vegas Unpacked\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="06BA1388.cs" />
+    <Compile Include="079D22D6.cs" />
+    <Compile Include="0B005140.cs" />
+    <Compile Include="1E2C790C.cs" />
+    <Compile Include="214E4E91.cs" />
+    <Compile Include="21DC1914.cs" />
+    <Compile Include="254311F2.cs" />
+    <Compile Include="2AFC6122.cs" />
+    <Compile Include="399E75EE.cs" />
+    <Compile Include="39F449BA.cs" />
+    <Compile Include="3B2240E9.cs" />
+    <Compile Include="3EE71944.cs" />
+    <Compile Include="42C923AD.cs" />
+    <Compile Include="58F92B99.cs" />
+    <Compile Include="5CEF7019.cs" />
+    <Compile Include="62204BF4.cs" />
+    <Compile Include="677771F5.cs" />
+    <Compile Include="6B1C4FA7.cs" />
+    <Compile Include="6C2B2665.cs" />
+    <Compile Include="6C2E7A66.cs" />
+    <Compile Include="70CF5C8A.cs" />
+    <Compile Include="71FE55E3.cs" />
+    <Compile Include="73B51C4F.cs" />
+    <Compile Include="768179F9.cs" />
+    <Compile Include="79FE179D.cs" />
+    <Compile Include="7E536D48.cs" />
+    <Compile Include="dashboard.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hub.Designer.cs">
+      <DependentUpon>hub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SafeGuard\AttackLog.cs" />
+    <Compile Include="SafeGuard\DiscordHookObject.cs" />
+    <Compile Include="SafeGuard\DiscordLogging.cs" />
+    <Compile Include="SafeGuard\MethodStats.cs" />
+    <Compile Include="SafeGuard\ProgramInformation.cs" />
+    <Compile Include="SafeGuard\ResponseInformation.cs" />
+    <Compile Include="SafeGuard\SafeCheck.cs" />
+    <Compile Include="SafeGuard\SafeGuardAttackInfo.cs" />
+    <Compile Include="SafeGuard\SafeGuardTitle.cs" />
+    <Compile Include="SafeGuard\Update.cs" />
+    <Compile Include="usercontrols\attack.cs" />
+    <Compile Include="usercontrols\spammer.cs" />
+    <Compile Include="usercontrols\ticket.cs" />
+    <Compile Include="usercontrols\tools.cs" />
+    <Compile Include="Work\discord\DiscordRpc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dashboard.resources" />
+    <EmbeddedResource Include="Form1.resources" />
+    <EmbeddedResource Include="hub.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+    <EmbeddedResource Include="Register.resources" />
+    <EmbeddedResource Include="usercontrols\attack.resources" />
+    <EmbeddedResource Include="usercontrols\spammer.resources" />
+    <EmbeddedResource Include="usercontrols\ticket.resources" />
+    <EmbeddedResource Include="usercontrols\tools.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
